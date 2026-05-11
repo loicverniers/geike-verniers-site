@@ -1,245 +1,151 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="LVSites maakt filmische, snelle en eigenzinnige websites voor merken, makers en lokale ondernemers die digitaal willen opvallen."
-    />
-    <title>LVSites | Filmische web ervaringen</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A curated gallery-style photography portfolio for Geike Verniers, Belgium-based photographer.">
+    <title>Geike Verniers | Photography Gallery</title>
+    <link rel="preload" as="image" href="assets/web/gallery-wall.webp">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <canvas class="void-canvas" data-void aria-hidden="true"></canvas>
-
-    <div class="grain" aria-hidden="true"></div>
-    <div class="light light-blue" aria-hidden="true"></div>
-    <div class="light light-gold" aria-hidden="true"></div>
-    <div class="cursor" data-cursor aria-hidden="true"></div>
-
-    <div class="signal" aria-label="LVSites interface">
-      <a class="sigil magnetic" href="#entry" aria-label="LVSites begin">
-        <span>LV</span>
-      </a>
-      <nav class="orbit" aria-label="Experimentele navigatie">
-        <a class="magnetic" href="#manifest">Visie</a>
-        <a class="magnetic" href="#works">Werk</a>
-        <a class="magnetic" href="#system">Systeem</a>
-        <a class="magnetic" href="#contact">Contact</a>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Geike Verniers home">Geike Verniers</a>
+      <nav class="nav-links">
+        <a href="#exhibition">Exhibition</a>
+        <a href="#series">Series</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
+    </header>
 
-    <main class="world" id="entry">
-      <div class="scene scene-hero" data-scene>
-        <div class="kinetic-type" aria-hidden="true">
-          <span>DESIGN</span>
-          <span>CODE</span>
-          <span>ATMOSPHERE</span>
+    <main id="top">
+      <section class="hero gallery-space" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/web/gallery-wall.webp" alt="A framed mountain photograph on a quiet white gallery wall">
+        <div class="hero-copy reveal">
+          <p class="kicker">Photography portfolio</p>
+          <h1 id="hero-title">Geike Verniers</h1>
+          <p class="hero-line">Belgium-based photographer capturing travel, portraits, automotive stories and commissioned moments with a calm editorial eye.</p>
+          <a class="hero-link" href="#exhibition">Enter the gallery</a>
         </div>
+      </section>
 
-        <div class="hero-copy" data-depth="0.28">
-          <p class="micro">Interactief portfolio / creatieve webdeveloper</p>
-          <h1>
-            <span>LVSites</span>
-            <span>bouwt digitale</span>
-            <span>werelden.</span>
-          </h1>
-          <p>
-            Geen standaard site met wat tekstblokken. LVSites bouwt websites met sfeer, snelheid,
-            scherpe interacties en een identiteit die niet inwisselbaar voelt.
-          </p>
+      <section class="intro reveal" aria-label="Gallery introduction">
+        <p class="section-number">01</p>
+        <div>
+          <h2>A quieter room for stronger photographs.</h2>
+          <p>Selected from Geike's existing portfolio and arranged like a small exhibition: generous spacing, slow rhythm, and only the images that carry a clear mood.</p>
         </div>
+      </section>
 
-        <div class="device-stage device-image-stage" aria-label="MacBook en iPhone met LVSites" data-depth="-0.22">
-          <div class="halo" aria-hidden="true"></div>
-          <img
-            class="device-art floating-device"
-            src="assets/devices-lvsites.svg"
-            width="1400"
-            height="980"
-            alt="Premium MacBook en iPhone mockup met LVSites op de schermen"
-            data-tilt
-          />
+      <section class="walk-room gallery-space" aria-label="Gallery corridor">
+        <img class="room-image" src="assets/web/gallery-corridor.webp" width="1672" height="941" alt="A white gallery corridor with framed photographs and angled daylight">
+        <div class="room-panel reveal">
+          <p class="section-number">Room A</p>
+          <h2>Walk the wall slowly.</h2>
+          <p>The scroll now moves like a gallery visit: framed work, breathing space, light falling across the room, then a closer view of the photographs.</p>
         </div>
+      </section>
 
-        <a class="entry-cta magnetic" href="#manifest">
-          <span>Betreed het systeem</span>
-          <i></i>
-        </a>
-      </div>
+      <section class="feature-wall" aria-label="Featured works">
+        <figure class="reveal">
+          <img src="assets/web/01-travel-06.webp" width="1900" height="1265" alt="Blue mountain silhouettes at sunset">
+          <figcaption>
+            <span>Aerial Silence</span>
+            <small>Travel</small>
+          </figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/web/13-ferrari-07.webp" width="1900" height="1265" alt="Blue sports car and people in daylight">
+          <figcaption>
+            <span>Blue Meeting</span>
+            <small>Automotive</small>
+          </figcaption>
+        </figure>
+      </section>
 
-      <div class="scene scene-manifest" id="manifest" data-scene>
-        <p class="scene-number">01 / Visie</p>
-        <div class="manifest-grid">
-          <h2>
-            Een website moet niet alleen uitleggen wie je bent.
-            <em>Ze moet de kamer veranderen.</em>
-          </h2>
-          <div class="manifest-copy">
-            <p>
-              LVSites behandelt elke site als een sfeer: typografie, ritme, beeld, beweging,
-              laadtijd en contactflow worden afgestemd op een duidelijke eerste indruk.
-            </p>
-            <p>
-              Het resultaat is geen decoratie. Het is richting. Een bezoeker moet voelen waar hij
-              moet kijken, wat belangrijk is en waarom jouw merk smaak heeft.
-            </p>
-          </div>
+      <section class="bench-room gallery-space" aria-label="Gallery bench room">
+        <div class="bench-copy reveal">
+          <p class="section-number">Room B</p>
+          <h2>Light, frames, distance.</h2>
+          <p>Generated gallery scenes are used only as atmosphere; Geike's photographs stay central and keep their original proportions.</p>
         </div>
+        <img class="bench-image reveal" src="assets/web/gallery-bench.webp" width="1672" height="941" alt="A gallery bench below three framed photography prints in warm sunlight">
+      </section>
 
-        <div class="floating-fragments" aria-label="Creative principles">
-          <span data-depth="0.15">Brutale helderheid</span>
-          <span data-depth="-0.18">Luxe met stilte</span>
-          <span data-depth="0.22">Performance discipline</span>
-          <span data-depth="-0.12">Beweging met reden</span>
+      <section class="gallery-section" id="exhibition" aria-labelledby="exhibition-title">
+        <div class="section-heading reveal">
+          <p class="section-number">02</p>
+          <h2 id="exhibition-title">Exhibition</h2>
         </div>
-      </div>
+        <div class="filter-bar reveal" aria-label="Filter photographs">
+          <button class="filter-button is-active" type="button" data-filter="All">All</button>
+          <button class="filter-button" type="button" data-filter="Travel">Travel</button>
+          <button class="filter-button" type="button" data-filter="Automotive">Automotive</button>
+          <button class="filter-button" type="button" data-filter="Portraits">Portraits</button>
+          <button class="filter-button" type="button" data-filter="Commissioned">Commissioned</button>
+          <button class="filter-button" type="button" data-filter="Kids">Kids</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+      </section>
 
-      <div class="scene scene-works" id="works" data-scene>
-        <p class="scene-number">02 / Geselecteerd werk</p>
-        <div class="works-track" data-track>
-          <a
-            class="project-panel magnetic"
-            href="../Geike%20Verniers%20Gallery%20Site/geike-verniers-gallery-site/index.html"
-            target="_blank"
-            rel="noreferrer"
-            data-project="gallery"
-          >
-            <span class="project-index">A</span>
-            <div class="project-image">
-              <img src="assets/screenshots/geike-verniers-home.png" alt="Screenshot van de Geike Verniers landingspagina" />
-            </div>
-            <div class="project-text">
-              <p>Fotografie portfolio</p>
-              <h3>Geike Verniers</h3>
-              <span>Een rustige, beeldgedreven interface met editorial ritme.</span>
-            </div>
-          </a>
-
-          <a
-            class="project-panel magnetic"
-            href="../angelique%27s%20site/index.html"
-            target="_blank"
-            rel="noreferrer"
-            data-project="atelier"
-          >
-            <span class="project-index">B</span>
-            <div class="project-image">
-              <img src="assets/screenshots/angelique-home.png" alt="Screenshot van de Angelique landingspagina" />
-            </div>
-            <div class="project-text">
-              <p>Kunstcatalogus</p>
-              <h3>Angelique</h3>
-              <span>Een warme, tactiele ervaring rond fysieke schilderijen.</span>
-            </div>
-          </a>
-
-          <article class="project-panel ghost-panel" data-project="future">
-            <span class="project-index">C</span>
-            <div class="project-image image-system"></div>
-            <div class="project-text">
-              <p>Volgende opdracht</p>
-              <h3>Jouw wereld hier</h3>
-              <span>Een filmische maatwerksite gebouwd rond jouw merk.</span>
-            </div>
+      <section class="series" id="series" aria-labelledby="series-title">
+        <div class="section-heading reveal">
+          <p class="section-number">03</p>
+          <h2 id="series-title">Series</h2>
+        </div>
+        <div class="series-list reveal">
+          <article>
+            <span>Travel</span>
+            <p>Atmospheric landscapes, often built around weather, distance and silence.</p>
+          </article>
+          <article>
+            <span>Automotive</span>
+            <p>Cars treated as sculptural objects, with detail, setting and event energy in balance.</p>
+          </article>
+          <article>
+            <span>Portraits</span>
+            <p>Soft editorial portraiture with careful color, natural posture and warm interiors.</p>
+          </article>
+          <article>
+            <span>Commissioned</span>
+            <p>Commercial work shaped with the same visual discipline as personal projects.</p>
           </article>
         </div>
-      </div>
+      </section>
 
-      <div class="scene scene-system" id="system" data-scene>
-        <p class="scene-number">03 / Werksysteem</p>
-        <div class="system-orbit" aria-label="LVSites capabilities">
-          <div class="core">
-            <span>LVSites</span>
-            <strong>bouwsysteem</strong>
-          </div>
-
-          <article class="capability cap-a" data-tilt>
-            <span>01</span>
-            <h3>Designrichting</h3>
-            <p>Visuele taal, typografie, layout-ritme en filmische interfaceconcepten.</p>
-          </article>
-          <article class="capability cap-b" data-tilt>
-            <span>02</span>
-            <h3>Custom frontend</h3>
-            <p>Responsive HTML, CSS, JavaScript, scrollchoreografie en micro-interacties.</p>
-          </article>
-          <article class="capability cap-c" data-tilt>
-            <span>03</span>
-            <h3>Fotografie optie</h3>
-            <p>Wanneer je merk echte beelden nodig heeft in plaats van stockvulling.</p>
-          </article>
-          <article class="capability cap-d" data-tilt>
-            <span>04</span>
-            <h3>Hosting model</h3>
-            <p>Launch, hosting, updates en abonnementsupport voor wie rust wil na oplevering.</p>
-          </article>
+      <section class="bio reveal" aria-label="About Geike Verniers">
+        <img src="assets/web/15-verduyn-02.webp" width="1267" height="1900" alt="Editorial portrait by Geike Verniers">
+        <div>
+          <p class="section-number">04</p>
+          <h2>Photographs with atmosphere first.</h2>
+          <p>Geike Verniers is a young photographer based in Belgium. Her work moves between travel, portraits, model photography, car tours, events and business commissions, always looking for the feeling around the moment as much as the moment itself.</p>
         </div>
-      </div>
+      </section>
 
-      <div class="scene scene-about" data-scene>
-        <p class="scene-number">04 / Fragmenten</p>
-        <div class="fragment-field">
-          <h2>met de hand gebouwd, op gevoel verfijnd.</h2>
-          <p class="thought thought-a">Geen template-zwaartekracht.</p>
-          <p class="thought thought-b">Een pagina mag als cinema aanvoelen.</p>
-          <p class="thought thought-c">Code moet verdwijnen tot ze beweegt.</p>
-          <pre class="code-fragment" aria-label="Code fragment"><code>const gevoel = design + snelheid + smaak;
-if (merk.heeftKarakter) interface.wordtSfeer();</code></pre>
-          <div class="image-shard shard-one"></div>
-          <div class="image-shard shard-two"></div>
+      <section class="contact reveal" id="contact" aria-labelledby="contact-title">
+        <p class="section-number">05</p>
+        <h2 id="contact-title">Book a shoot</h2>
+        <div class="contact-actions">
+          <a href="mailto:geike.vn@gmail.com">geike.vn@gmail.com</a>
+          <a href="https://www.instagram.com/viewsofgeike/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://verniersgeike.myportfolio.com/" target="_blank" rel="noreferrer">Original portfolio</a>
         </div>
-      </div>
-
-      <div class="scene scene-contact" id="contact" data-scene>
-        <div class="contact-chamber">
-          <p class="micro">Laatste transmissie</p>
-          <h2>Laat je website onmogelijk verwarren met iemand anders.</h2>
-          <p>
-            Stuur je idee, de sfeer, je bestaande site of gewoon een rommelige notitie. LVSites zet
-            het om naar een visueel systeem dat mensen kunnen voelen en gebruiken.
-          </p>
-
-          <form
-            class="contact-form"
-            action="https://formsubmit.co/communication@lvsites.solutions"
-            method="POST"
-          >
-            <input type="hidden" name="_subject" value="Nieuw project via LVSites" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <label>
-              <span>Naam</span>
-              <input type="text" name="name" autocomplete="name" required />
-            </label>
-            <label>
-              <span>E-mail</span>
-              <input type="email" name="email" autocomplete="email" required />
-            </label>
-            <label class="message-field">
-              <span>Signaal</span>
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Een portfolio, merkwebsite, galerij, landingspagina, visueel systeem..."
-                required
-              ></textarea>
-            </label>
-            <button class="send-button magnetic" type="submit">Verstuur signaal</button>
-          </form>
-
-          <a class="direct-mail magnetic" href="mailto:communication@lvsites.solutions">
-            communication@lvsites.solutions
-          </a>
-        </div>
-      </div>
+      </section>
     </main>
 
-    <div class="progress" aria-hidden="true">
-      <span data-progress></span>
-    </div>
+    <dialog class="lightbox" id="lightbox" aria-label="Selected photograph">
+      <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photograph">&lt;</button>
+      <figure>
+        <img id="lightbox-image" alt="">
+        <figcaption>
+          <span id="lightbox-title"></span>
+          <small id="lightbox-caption"></small>
+        </figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photograph">&gt;</button>
+    </dialog>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
